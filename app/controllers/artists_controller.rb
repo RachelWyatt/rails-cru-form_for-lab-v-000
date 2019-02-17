@@ -8,4 +8,10 @@ class ArtistsController < ApplicationController
 
   def show
   end
+
+  private
+
+  def artist_params(*args)
+    params.require(:artist).permit(*args)
+  end
 end
