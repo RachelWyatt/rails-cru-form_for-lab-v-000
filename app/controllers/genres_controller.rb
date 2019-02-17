@@ -20,7 +20,7 @@ class GenresController < ApplicationController
   end
 
   def edit
-    @genre = Genre.find(params[:id])
+    @genres = Genre.all
   end
 
   private
