@@ -3,8 +3,8 @@ class GenresController < ApplicationController
     @genre = Genre.new
   end
 
-  def index 
-    @genres = Genre.all 
+  def index
+    @genres = Genre.all
   end
 
   def create
